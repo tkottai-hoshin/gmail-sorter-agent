@@ -9,6 +9,6 @@ Tech Stack:
 
 - LangGraph
 - Kimi K3 (Opensource LLM)
-- Google API
+- GMail API
 
 
