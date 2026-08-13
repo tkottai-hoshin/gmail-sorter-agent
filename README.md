@@ -37,7 +37,7 @@ LangGraph manages:
 2 The order of steps
 3 Passing data from one step to the next
 
-Feature ~ What it means
+Feature -- What it means
 Stateful- Remembers information between steps
 Controllable - You decide the exact flow
 Reliable - Better for production than free-form agents
