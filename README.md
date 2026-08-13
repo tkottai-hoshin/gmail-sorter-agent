@@ -29,6 +29,22 @@ In the first Node, the parameter for when the agent should classify the email as
 
 Second node (apply_label) → Takes that category and actually puts the label on the email in Gmail
 
+Fetch email → Classify email → Apply label → Done
+
+LangGraph manages:
+
+1 The state (email_id, subject, body, category, etc.)
+2 The order of steps
+3 Passing data from one step to the next
+
+Feature ~ What it means
+Stateful- Remembers information between steps
+Controllable - You decide the exact flow
+Reliable - Better for production than free-form agents
+Supports cycles - Can loop if needed
+Human-in-the-loop - Can pause and ask a human for approval
+
+
 Tech Stack:
 
 - LangGraph
