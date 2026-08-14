@@ -25,17 +25,17 @@ Tooling:
 
 The two main tools are I've defined as python functions are: 1) Classify 2) Apply. 
 
-In the first Node, the parameter for when the agent should classify the email as Reply Now, Reply Later, or No Action is in the Prompt Function itself → LLM decides the category. This is where changes can be made to this tool to be more granular - hard-coded rules, business logic, or workflow guardrails. 
+First Node: the parameter for when the agent should classify the email as Reply Now, Reply Later, or No Action is in the Prompt Function itself → LLM decides the category. This is where changes can be made to this tool to be more granular - hard-coded rules, business logic, or workflow guardrails. 
 
-Second node (apply_label) → Takes that category and actually puts the label on the email in Gmail
+Second node: (apply_label) → Takes that category and actually puts the label on the email in Gmail
 
-Fetch email → Classify email → Apply label → Done
+                  Fetch email → Classify email → Apply label → Done
 
-LangGraph manages:
+LangGraph manages
 
-1 The state (email_id, subject, body, category, etc.)
-2 The order of steps
-3 Passing data from one step to the next
+1. The state (email_id, subject, body, category, etc.)
+2. The order of steps
+3. Passing data from one step to the next
 
 Feature -- What it means
 Stateful- Remembers information between steps
